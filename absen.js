@@ -22,7 +22,9 @@ const Absen = (nisn) => {
     .findOne({ nisn })
     .then((data) => {
       if (data) {
+        console.log("Nisn tersedia");
       } else {
+        console.log("Nisn tidak tersedia");
       }
     });
 };
