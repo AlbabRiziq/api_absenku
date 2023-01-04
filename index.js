@@ -84,7 +84,6 @@ app.post("/api/absen", (req, res) => {
           });
       } else {
         db.collection("dataAbsen")
-
           .insertOne({
             nisn,
             absen: [
